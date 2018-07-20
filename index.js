@@ -41,8 +41,22 @@ function total() {
 }
 
 function removeFromCart(item) {
-  cart.splice()
+  var i=-1;
+  var itemFound=false;
+  do {
+    i++;
+    if (cart[i].itemName===item) {
+      itemFound=true;
+      cart.splice(i,1);
+    }
+  } while ((i<(cart.length-1)) && !itemFound);
+  
+  if (itemFound)
+  
+  
 }
+
+
 
 
 /*
