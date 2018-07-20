@@ -38,6 +38,10 @@ function total() {
 
 
 /*
+3. The `total()` function accepts no arguments, iterates through the `cart` array, and returns the current total value of the items in the cart.
+
+
+
 
 */
 
