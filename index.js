@@ -51,9 +51,9 @@ function removeFromCart(item) {
     }
   } while ((i<(cart.length-1)) && !itemFound);
   
-  if (itemFound)
-  
-  
+  if (!itemFound) {
+    return "That item is not in your cart.";
+  }
 }
 
 
