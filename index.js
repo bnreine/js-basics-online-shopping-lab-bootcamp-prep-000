@@ -42,29 +42,7 @@ function total() {
 
 
 /*
-3. The `total()` function accepts no arguments, iterates through the `cart` array, and returns the current total value of the items in the cart.
 
-describe("total()", function() {
-  it("adds up the price of all items in the cart", function() {
-    addToCart("sorghum");
-    addToCart("tarragon");
-
-    const sorghumCost = getCart()[0].itemPrice;
-    const tarragonCost = getCart()[1].itemPrice;
-
-    let totalCost = sorghumCost + tarragonCost;
-
-    expect(total()).toBe(totalCost);
-
-    addToCart("urchin");
-
-    const urchinCost = getCart()[2].itemPrice;
-
-    totalCost += urchinCost;
-
-    expect(total()).toBe(totalCost);
-  });
-});
 */
 
 
