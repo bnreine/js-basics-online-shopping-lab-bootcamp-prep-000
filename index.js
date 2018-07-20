@@ -9,10 +9,11 @@ function setCart(c) {
   return cart;
 }
 
+/*
 function addToCart(item) {
  cart.push({ itemName: item, itemPrice: Math.floor((99*math.random()+1))});
 }
-
+*/
 
 
 /*
