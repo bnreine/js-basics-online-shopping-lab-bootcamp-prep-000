@@ -32,6 +32,10 @@ function viewCart() {
   }
 }
 
+function total() {
+  // write your code here
+}
+
 
 /*
 
@@ -40,9 +44,8 @@ function viewCart() {
 
 
 
-function total() {
-  // write your code here
-}
+
+
 
 function removeFromCart(item) {
   // write your code here
