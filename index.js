@@ -16,11 +16,32 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  
+  if (cart.length===0) {
+    return 'Your shopping cart is empty.';
+  }
+  else {
+    var message=`In your cart, you have `;
+    for (var i=0; i<(cart.length-1); i++) {
+      message+=`${cart[i].itemName} at $${cart[i].itemPrice}, `;
+    }
+    message+=`and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+    return message;
+  }
 }
 
 
 /*
+    + If the cart is empty, the function should instead return `Your shopping cart is empty.`
+    + ***Note***: Pay close attention to the syntax above. The returned statement should be a single sentence that begins with `In your cart, you have `, terminates in a period, and can assume the following shapes according to how many items the cart contains:
+      * 1 item — `In your cart, you have bananas at $17.`
+      * 2 items — `In your cart, you have bananas at $17, and pancake batter at $5.`
+      * 3+ items — `In your cart, you have bananas at $17, pancake batter at $5, and eggs at $49.`
+
+
+
+
+
+
 describe("viewCart()", function() {
   it("prints 'Your shopping cart is empty.' if the cart is empty", function() {
     expect(viewCart()).toEqual("Your shopping cart is empty.")
