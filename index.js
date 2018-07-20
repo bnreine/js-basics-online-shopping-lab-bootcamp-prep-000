@@ -45,13 +45,12 @@ function removeFromCart(item) {
   var itemFound=false;
   while ((i<(cart.length)) && !itemFound)
     {
-    i++;
     if (cart[i].itemName===item) {
       itemFound=true;
       cart.splice(i,1);
     }
-  } while ((i<(cart.length-1)) && !itemFound);
-  
+    i++;
+  } 
   if (!itemFound) {
     return "That item is not in your cart.";
   }
